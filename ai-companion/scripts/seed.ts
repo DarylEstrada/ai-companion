@@ -7,13 +7,12 @@ async function main() {
     await db.category.createMany({
       data: [
         { name: "Famous People" },
-        { name: "Famous People" },
-        { name: "Famous People" },
-        { name: "Famous People" },
-        { name: "Famous People" },
-        { name: "Famous People" },
-        { name: "Famous People" },
-        { name: "Famous People" },
+        { name: "Movies & TV" },
+        { name: "Musicians" },
+        { name: "Games" },
+        { name: "Animals" },
+        { name: "Philosophy" },
+        { name: "Scientist" },
       ],
     });
   } catch (error) {
@@ -22,3 +21,5 @@ async function main() {
     await db.$disconnect();
   }
 }
+
+main();
